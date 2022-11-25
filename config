@@ -1,0 +1,20 @@
+config = {
+  "dataset_path": "train/object_detection",
+  "model_log_interval": 1,
+  "data": {
+    "class_ids": {
+      "door": 1
+    }
+  },
+  "model": {
+    "image_size": 512
+  },
+  "training": {
+    "num_epochs": 2,
+    "batch_size": 1,
+    "update_every_n_batches": 1,
+    "device": "cpu",
+    "learning_rate": 1e-4,
+    "num_workers": 0
+  }
+}
